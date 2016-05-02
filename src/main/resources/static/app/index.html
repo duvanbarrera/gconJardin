@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="myApp" class="no-js"> 
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>actividades exitosas</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="bower_components/bootstrap-css-only/css/bootstrap.css">
+  <link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
+<link rel="stylesheet" href="css/5grid/core-desktop.css" />
+<link rel="stylesheet" href="/css/5grid/core-1200px.css" />
+
+<link rel="stylesheet" href="css/5grid/core-noscript.css" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/style-desktop.css" />
+
+  
+</head>
+<body>
+<div >
+	<div id="header-wrapper">
+		<header id="header">
+			<div class="5grid-layout">
+				<div class="row">
+					<div class="12u" id="logo">
+                                           
+                                            <h1><a  class="mobileUI-site-name">actividades exitosas</a></h1>
+					</div>
+				</div>
+			</div>
+        <div class="5grid-layout">
+                <div class="row">
+                        <div class="12u" id="menu">
+                                <div id="menu-wrapper">
+                                        <nav   class="mobileUI-site-nav ">
+
+                                            <ul ng-controller="myApp.principal">
+                                                 <li >  
+                                                    <a href="#/viewLogin" class="nav-link">Login</a>
+                                                </li>
+                                               
+                                                <!--li >               
+                                                    <a href="#/viewRegistroPostres">Nueva actividad</a>          
+                                                </li-->
+                                                <li >
+                                                    <a href="#/viewActividades">actividades</a>
+                                                </li>
+                                            
+                                               
+                                                <li >
+                                                    <a ng-click="logout()">Logout</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                </div>
+                        </div>
+                </div>
+        </div>
+		</header>
+	</div>
+	
+	
+</div>
+
+
+
+  <div ng-view ></div>
+
+  <div id="copyright" class="5grid-layout"><section>
+		<p>&copy; Jardin Infantil el Castillo de los Genios | Author: Duvan Barrera </p>
+	</section></div>
+
+ 
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <!--Dependencias de Angular material-->
+
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+
+<script src="bower_components/angular-aria/angular-aria.js"></script>
+
+<!--Angular material-->
+
+<script src="bower_components/angular-material/angular-material.js"></script>
+  <script src="app.js"></script>
+  
+  <script src="viewRegistroPostres/viewRegistroPostres.js"></script>
+
+ <script src="viewActividades/viewActividades.js"></script>
+  <script src="viewLogin/viewLogin.js"></script>
+   <script src="services/services.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>
+
+
